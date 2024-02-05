@@ -1,21 +1,10 @@
 <template>
-  <div id="app" class="py-5 pb-10 px-16">
-    <p class="font-bold text-6xl">Rameet & Gursavek</p>
-    <p class="text-semibold text-4xl">April 30th - May 4th </p>
-    <CountdownCard msg="Welcome to Your Vue.js App"/>
-  </div>
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/mehendi">Mehendi</router-link>
+  </nav>
+  <router-view/>
 </template>
-
-<script>
-import CountdownCard from './components/CountdownCard.vue'
-
-export default {
-  name: 'App',
-  components: {
-    CountdownCard
-  }
-}
-</script>
 
 <style>
 #app {
@@ -24,6 +13,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
