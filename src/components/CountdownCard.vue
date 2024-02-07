@@ -1,7 +1,25 @@
 <template>
   <div class="grid justify-center items-center pt-5 relative pb-20">
     <div class="grid justify-center items-center bg-periwinkle-50 rounded-xl relative">
-      <img class="h-5/6 w-auto rounded-xl relative" src= "../assets/Ramy-Savek-1.jpg" alt="Cycling Background" />
+      <img class="h-5/6 w-auto rounded-xl relative" id="countdowncardimg" src= "../assets/Ramy-Savek-1.jpg" alt="Cycling Background" />
+      
+
+   <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="../assets/Ramy-Savek-1.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="../assets/Ramy-Savek-2.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="../assets/Ramy-Savek-3.jpg" alt="">
+			</li>
+		</ul>
+  </div>
+</section> -->
+
       <div class=" absolute grid justify-items-center w-full h-32 ">
         <!-- Timer -->
         <div class="grid justify-center items-center bg-black text-4xl text-white parent-container w-5/6 py-3 backdrop-contrast-150 backdrop-blur-sm">
@@ -26,22 +44,22 @@
 
 
 <script>
-export default {
-  data() {
-    return {
-      images: [
-        "../assets/Ramy-Savek-1.jpg",
-        "../assets/Ramy-Savek-2.jpg",
-        "../assets/Ramy-Savek-3.jpg",
-      ],
-      currentImage: "../assets/Ramy-Savek-1.jpg",
-      imageIndex: 0,
-      targetDate: new Date('2024-04-30T18:00:00'), 
-      formattedMonths: '',
-      formattedDays: '',
-      formattedHours: '',
-      formattedMins: '',
-      formattedSecs: '',
+
+  export default {
+    data() {
+      return {
+        images: [
+          "../assets/Ramy-Savek-1.jpg",
+          "../assets/Ramy-Savek-2.jpg",
+          "../assets/Ramy-Savek-3.jpg",
+        ],
+        currentImageIndex: 0,
+        targetDate: new Date('2024-04-30T18:00:00'), 
+        formattedMonths: '',
+        formattedDays: '',
+        formattedHours: '',
+        formattedMins: '',
+        formattedSecs: '',
     };
   },
   methods: {
@@ -53,8 +71,7 @@ export default {
       setInterval(this.updateCountdown, 1000);
     },
     cycleImages() {
-        this.imageIndex = (this.imageIndex + 1) % this.images.length;
-        this.currentImage = this.images[this.imageIndex];
+
     },
     updateCountdown() {
       const currentTime = new Date();

@@ -22,6 +22,9 @@ module.exports = {
           '900': '#412c83',
           '950': '#271a4c',
         },
+        backgroundImage: {
+          'logo-test': "url('/src/assets/Ramy-Savek-1.jpg')"
+        }
       },      
     },
   },

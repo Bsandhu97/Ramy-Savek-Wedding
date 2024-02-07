@@ -9,8 +9,8 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/mehendi',
-    name: 'about',
+    path: '/events',
+    name: 'events',
     component: MehendiView
   }
 ]
