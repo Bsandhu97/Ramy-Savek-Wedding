@@ -1,5 +1,5 @@
 <template>
-  <div class="grid justify-center items-center pt-5 relative pb-20">
+  <div class="grid justify-center items-center pt-5 relative pb-20 mx-3">
     <div class="grid justify-center items-center bg-periwinkle-50 rounded-xl relative">
       <img class="h-5/6 w-auto rounded-xl relative" id="countdowncardimg" src= "../assets/Ramy-Savek-1.jpg" alt="Cycling Background" />
       
@@ -23,18 +23,18 @@
       <div class=" absolute grid justify-items-center w-full h-32 ">
         <!-- Timer -->
         <div class="grid justify-center items-center bg-black text-4xl text-white parent-container w-5/6 py-3 backdrop-contrast-150 backdrop-blur-sm">
-          <div class="font-medium text-4xl pb-3">You have no idea just how much I love you</div>
-          <div class="text-6xl font-semibold grid grid-cols-5 gap-2">
+          <div class="font-medium sm:text-4xl text-2xl pb-3">You have no idea just how much I love you</div>
+          <div class="sm:text-6xl text-4xl font-semibold grid grid-cols-5 gap-2">
            <div> {{formattedMonths}} </div> 
             <div> {{formattedDays}}</div>  
             <div> {{formattedHours}}</div>  
             <div> {{formattedMins}}</div>  
             <div> {{formattedSecs}} </div> 
-            <div class="text-3xl font-medium">Months</div>
-            <div class="text-3xl font-medium">Days</div>
-            <div class="text-3xl font-medium">Hours</div>
-            <div class="text-3xl font-medium">Mins</div>
-            <div class="text-3xl font-medium">Secs</div>
+            <div class="sm:text-3xl text-xl font-medium">Months</div>
+            <div class="sm:text-3xl text-xl font-medium">Days</div>
+            <div class="sm:text-3xl text-xl font-medium">Hours</div>
+            <div class="sm:text-3xl text-xl font-medium">Mins</div>
+            <div class="sm:text-3xl text-xl font-medium">Secs</div>
           </div>
         </div>
       </div>
