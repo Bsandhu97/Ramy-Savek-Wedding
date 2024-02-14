@@ -5,9 +5,9 @@
     </svg>
   </button>
   <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800 bg-periwinkle-50">
+    <div class="h-full px-3 py-4 overflow-y-auto dark:bg-periwinkle-500 bg-periwinkle-50">
         <router-link to="/" class="flex items-center ps-2.5 mb-5">
-          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-7" alt="rings-icon" />
+          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-7 dark:fill-periwinkle-50" alt="rings-icon" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
         </router-link>
         <ul class="space-y-2 font-medium">
