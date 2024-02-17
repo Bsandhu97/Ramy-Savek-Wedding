@@ -1,7 +1,7 @@
 <template>
   <div class="grid justify-center items-center pt-5 relative pb-20 mx-3">
-    <div class="grid justify-center items-center bg-periwinkle-50 rounded-xl relative">
-      <img class="h-5/6 w-auto rounded-xl relative" id="countdowncardimg" src= "../assets/Ramy-Savek-1.jpg" alt="Cycling Background" />
+    <div class="grid justify-center items-center bg-periwinkle-50 rounded-xl relative sm:p-0 p-4">
+      <img class="sm:h-5/6 h-fit w-auto rounded-xl relative" id="countdowncardimg" src= "../assets/Ramy-Savek-1.jpg" alt="Cycling Background" />
       
 
    <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
@@ -22,9 +22,9 @@
 
       <div class=" absolute grid justify-items-center w-full h-32 ">
         <!-- Timer -->
-        <div class="grid justify-center items-center bg-black text-4xl text-white parent-container w-5/6 py-3 backdrop-contrast-150 backdrop-blur-sm">
-          <div class="font-medium sm:text-4xl text-2xl pb-3">You have no idea just how much I love you</div>
-          <div class="sm:text-6xl text-4xl font-semibold grid grid-cols-5 gap-2">
+        <div class="grid justify-center items-center bg-black text-4xl text-white parent-container sm:w-5/6 w-11/12 sm:py-4 py-1 backdrop-contrast-150 backdrop-blur-sm">
+          <!-- <div class="font-medium sm:text-4xl text-2xl pb-3">You have no idea just how much I love you</div> -->
+          <div class="sm:text-6xl text-4xl font-semibold grid grid-cols-5 sm:gap-2  gap-3">
            <div> {{formattedMonths}} </div> 
             <div> {{formattedDays}}</div>  
             <div> {{formattedHours}}</div>  

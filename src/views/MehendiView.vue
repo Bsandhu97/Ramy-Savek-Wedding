@@ -58,8 +58,8 @@
             <div class="md:text-2xl text-xl px-2">April 30th, 2024, 6:00 pm</div>
           </div>
           <button @click="toGoogleMaps(1)">
-            <div class="flex justify-center pt-3 px-5">
-              <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center md:text-2xl text-xl "></i>
+            <div class=" hover:text-periwinkle-300 flex justify-center pt-3 px-5">
+              <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center "></i>
               <div class="md:text-2xl text-xl  px-2">Sandhu Residence<br>170 Summerwind Dr., Milpitas, CA, 95035</div>
             </div>
           </button>        
@@ -78,7 +78,7 @@
           </div>
           <button @click="toGoogleMaps(2)">
             
-            <div class="flex justify-center pt-3 px-5">
+            <div class=" hover:text-periwinkle-300 flex justify-center pt-3 px-5">
               <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
               <div class="md:text-2xl text-xl px-2">Aria Dining & Banquets<br>212 Ranch Dr, Milpitas, CA 95035</div>
             </div>
@@ -98,7 +98,7 @@
           </div>
           <button @click="toGoogleMaps(1)">
             
-            <div class="flex justify-center pt-3 px-5">
+            <div class="hover:text-periwinkle-300 flex justify-center pt-3 px-5">
               <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
               <div class="md:text-2xl text-xl px-2">Sandhu Residence<br>170 Summerwind Dr., Milpitas, CA, 95035</div>
             </div>
@@ -109,16 +109,17 @@
     <!-- py-2 px-2 mx-1 SM mobile -->
     <div id="anandkaraj" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-8-1.jpg" alt="image description">
-          <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
+        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-8-1.jpg" alt="image description">
+        <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        
+        <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Anand Karaj</div>
           <div class="flex justify-center pt-0 px-0">
             <i class="bi bi-calendar text-periwinkle-50 text-1xl"></i>        
             <div class="md:text-2xl text-xl px-2">May 3rd, 2024<br>Arrival of Barat: 9:00 am<br>Milni & Tea: 10:00 am<br>Anand Karaj: 11:00 am<br>Lunch: 1:00 pm<br></div>
           </div>
           <button @click="toGoogleMaps(3)">
-            
-            <div class="flex justify-center pt-3 px-5">
+          
+            <div class="hover:text-periwinkle-300 flex justify-center pt-3 px-5">
               <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
               <div class="md:text-2xl text-xl px-2">San Jose Gurdwara<br>3636 Gurdwara Ave, San Jose, CA 95148</div>
             </div>
@@ -129,26 +130,25 @@
 
     <div id="reception"  class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-1.jpg" alt="image description">
-          <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
+        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-1.jpg" alt="image description">
+        <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        
+        <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Reception</div>
           <div class="flex justify-center pt-3 px-5">
             <i class="bi bi-calendar text-periwinkle-50 text-2xl"></i>        
             <div class="md:text-2xl text-xl px-2">May 1st, 2024, 5:00 pm</div>
           </div>
-          <button @click="toGoogleMaps(2)">
+          <button class="" @click="toGoogleMaps(2)">
             
-            <div class="flex justify-center pt-3 px-5">
-              <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
+            <div class="hover:text-periwinkle-300 flex justify-center pt-3 px-5 ">
+              <i id="locationReception" class="hover:text-periwinkle-300 bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
               <div class="md:text-2xl text-xl px-2">Aria Dining & Banquets<br>212 Ranch Dr, Milpitas, CA 95035</div>
             </div>
           </button>
-        </figcaption>
-      </figure>   
-    </div>
+      </figcaption>
+    </figure>   
   </div>
-  
-  
+</div>
 </template>
 
 <script>
@@ -177,6 +177,22 @@ export default {
           behavior: 'smooth',
         });
       }
+    },
+    mouseHoverEvent(id) {
+      console.log('hovered');
+      if(!id) return;
+      const element = document.getElementById(id);
+
+      
+        if(element?.classList.contains('text-periwinkle-300')) {
+          element?.classList.remove('text-periwinkle-300');
+          element?.classList.add('text-periwinkle-50');
+        }
+        else if(element?.classList.contains('text-periwinkle-50')){
+          element?.classList.add('text-periwinkle-300');
+        }
+   
+        
     },
   },
 }
