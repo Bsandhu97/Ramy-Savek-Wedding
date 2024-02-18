@@ -5,9 +5,9 @@
     </svg>
   </button>
   <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto dark:bg-periwinkle-500 bg-periwinkle-50">
+    <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800 bg-periwinkle-50">
         <router-link to="/" class="flex items-center ps-2.5 mb-5">
-          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-7 dark:fill-periwinkle-50" alt="rings-icon" />
+          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-7" alt="rings-icon" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
         </router-link>
         <ul class="space-y-2 font-medium">
@@ -70,27 +70,28 @@
     <div id="jaggo" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
           <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-1.jpg" alt="image description">
-          <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        <figcaption class="parent-container rounded-xl  absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
-          <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Jaggo</div>
-          <div class="flex justify-center pt-3 px-5">
-            <i class="bi bi-calendar text-periwinkle-50 text-2xl"></i>        
-            <div class="md:text-2xl text-xl px-2">May 1st, 2024, 5:00 pm</div>
-          </div>
-          <button @click="toGoogleMaps(2)">
-            
-            <div class=" hover:text-periwinkle-300 flex justify-center pt-3 px-5">
-              <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
-              <div class="md:text-2xl text-xl px-2">Aria Dining & Banquets<br>212 Ranch Dr, Milpitas, CA 95035</div>
+          <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-17-2.jpg" alt="image description">        
+          <figcaption class="parent-container rounded-xl  absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
+            <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Jaggo</div>
+            <div class="flex justify-center pt-3 px-5">
+              <i class="bi bi-calendar text-periwinkle-50 text-2xl"></i>        
+              <div class="md:text-2xl text-xl px-2">May 1st, 2024, 5:00 pm</div>
             </div>
-          </button>
-        </figcaption>
+            <button @click="toGoogleMaps(2)">
+              
+              <div class=" hover:text-periwinkle-300 flex justify-center pt-3 px-5">
+                <i class="bi bi-geo-alt text-periwinkle-50 text-3xl grid content-center"></i>
+                <div class="md:text-2xl text-xl px-2">Aria Dining & Banquets<br>212 Ranch Dr, Milpitas, CA 95035</div>
+              </div>
+            </button>
+          </figcaption>
       </figure>   
     </div>
 
     <div id="maiyan" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
           <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-4-1.jpg" alt="image description">
-          <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        <figcaption class=" parent-container  rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
+          <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-4-2.jpg" alt="image description">        <figcaption class=" parent-container  rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Maiyan</div>
           <div class="flex justify-center pt-3 px-5">
             <i class="bi bi-calendar text-periwinkle-50 text-2xl"></i>        
@@ -110,7 +111,7 @@
     <div id="anandkaraj" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
         <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-8-1.jpg" alt="image description">
-        <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        
+        <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-8-2.jpg" alt="image description">        
         <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Anand Karaj</div>
           <div class="flex justify-center pt-0 px-0">
@@ -130,8 +131,8 @@
 
     <div id="reception"  class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit filter">
-        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-1.jpg" alt="image description">
-        <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">        
+        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-13-1.jpg" alt="image description">
+        <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-13-2.jpg" alt="image description">        
         <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Reception</div>
           <div class="flex justify-center pt-3 px-5">

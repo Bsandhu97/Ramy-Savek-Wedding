@@ -1,8 +1,9 @@
 <template>
   <div class="grid justify-center items-center pt-5 relative pb-20 mx-3">
-    <div class="grid justify-center items-center bg-periwinkle-50 rounded-xl relative sm:p-0 p-4">
-      <img class="sm:h-5/6 h-fit w-auto rounded-xl relative" id="countdowncardimg" src= "../assets/Ramy-Savek-1.jpg" alt="Cycling Background" />
-      
+    <div class="grid justify-center items-center bg-periwinkle-50 rounded-xl relative sm:p-0 p-4">       
+      <!-- <transition name="fade" mode="ease-out"> -->
+        <img class="transition sm:h-5/6 h-fit w-auto rounded-xl relative" style="animation-play-state: paused" id="countdowncardimg" :key="currentImage" :src="currentImage" alt="Image" />
+      <!-- </transition> -->
 
    <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
   <div class="splide__track">
@@ -44,15 +45,25 @@
 
 
 <script>
-
   export default {
     data() {
       return {
         images: [
-          "../assets/Ramy-Savek-1.jpg",
-          "../assets/Ramy-Savek-2.jpg",
-          "../assets/Ramy-Savek-3.jpg",
+           require("../assets/Ramy-Savek-1.jpg"),
+           require("../assets/Ramy-Savek-2.jpg"),
+           require("../assets/Ramy-Savek-4-2.jpg"),
+           require("../assets/Ramy-Savek-11.jpg"),
+           require("../assets/Ramy-Savek-8-2.jpg"),
+           require("../assets/Ramy-Savek-13-2.jpg"),
+           require("../assets/Ramy-Savek-1.jpg"),
+           require("../assets/Ramy-Savek-2.jpg"),
+           require("../assets/Ramy-Savek-4-2.jpg"),
+           require("../assets/Ramy-Savek-11.jpg"),
+           require("../assets/Ramy-Savek-8-2.jpg"),
+           require("../assets/Ramy-Savek-13-2.jpg"),
+
         ],
+        currentImage: require("../assets/Ramy-Savek-1.jpg"),
         currentImageIndex: 0,
         targetDate: new Date('2024-04-30T18:00:00'), 
         formattedMonths: '',
@@ -63,15 +74,26 @@
     };
   },
   methods: {
+    
+    async sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    },
     webCycle() {
-      this.cycleImages();
+      // this.cycleImages();
       setInterval(this.cycleImages, 5000)
-      
+      // setInterval(this.animationtimer(), 9000)
       this.updateCountdown();
       setInterval(this.updateCountdown, 1000);
     },
     cycleImages() {
+      // const el = document.getElementById('countdowncardimg');
+      // el.style.animationPlayState = 'running';
+      console.log('cycleImages')
+      // await this.sleep(8000);
+      const index = this.images.indexOf(this.currentImage);
+      this.currentImage = this.images[(index + 1) % this.images.length];
 
+      // el.style.animationPlayState = 'paused';
     },
     updateCountdown() {
       const currentTime = new Date();
@@ -105,5 +127,23 @@
 .parent-container {
   background-color: rgba(0, 0, 0, 0.3); /* Parent opacity */
   /* Additional styling for the parent container */
+}
+.transition{
+  animation: transition 3s linear;
+  }
+@keyframes transition {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .35;
+  }
+  75% {
+    opacity: .55;
+  }
+  100% {
+    opacity: .85;
+  }
+
 }
 </style>
