@@ -46,9 +46,9 @@
   </aside>
   <div class="about grid justify-items-center sm:gap-20 gap-10 sm:ps-56 ps-0">
     <!-- Switch to 2/3 in mobile -->
-    <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center">
+    <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6.jpg" alt="image description">
+          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-1.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">
 
         <figcaption class="absolute rounded-xl parent-container top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-150 backdrop-blur-sm">
@@ -67,7 +67,7 @@
       </figure>   
     </div>
 
-    <div id="jaggo" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
+    <div id="jaggo" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit transition-all duration-300 filter">
           <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-1.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-17-2.jpg" alt="image description">        
@@ -88,7 +88,7 @@
       </figure>   
     </div>
 
-    <div id="maiyan" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
+    <div id="maiyan" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit transition-all duration-300 filter">
           <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-4-1.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-4-2.jpg" alt="image description">        <figcaption class=" parent-container  rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
@@ -108,7 +108,7 @@
       </figure>   
     </div>
     <!-- py-2 px-2 mx-1 SM mobile -->
-    <div id="anandkaraj" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
+    <div id="anandkaraj" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit transition-all duration-300 filter">
         <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-8-1.jpg" alt="image description">
         <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-8-2.jpg" alt="image description">        
@@ -129,7 +129,7 @@
       </figure>   
     </div>
 
-    <div id="reception"  class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
+    <div id="reception"  class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit filter">
         <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-13-1.jpg" alt="image description">
         <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-13-2.jpg" alt="image description">        

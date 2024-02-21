@@ -80,7 +80,7 @@
     },
     webCycle() {
       // this.cycleImages();
-      setInterval(this.cycleImages, 5000)
+      setInterval(this.cycleImages, 10000)
       // setInterval(this.animationtimer(), 9000)
       this.updateCountdown();
       setInterval(this.updateCountdown, 1000);
