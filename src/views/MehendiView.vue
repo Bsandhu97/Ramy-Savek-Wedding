@@ -48,7 +48,7 @@
     <!-- Switch to 2/3 in mobile -->
     <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center">
       <figure class="relative w-fit filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6.jpg" alt="image description">
+          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-6.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">
 
         <figcaption class="absolute rounded-xl parent-container top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-150 backdrop-blur-sm">
@@ -69,7 +69,7 @@
 
     <div id="jaggo" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-1.jpg" alt="image description">
+          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-11-3.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-17-2.jpg" alt="image description">        
           <figcaption class="parent-container rounded-xl  absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
             <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Jaggo</div>
@@ -90,7 +90,7 @@
 
     <div id="maiyan" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-4-1.jpg" alt="image description">
+          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-4-4.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-4-2.jpg" alt="image description">        <figcaption class=" parent-container  rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Maiyan</div>
           <div class="flex justify-center pt-3 px-5">
@@ -110,7 +110,7 @@
     <!-- py-2 px-2 mx-1 SM mobile -->
     <div id="anandkaraj" class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit transition-all duration-300 filter">
-        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-8-1.jpg" alt="image description">
+        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-8-4.jpg" alt="image description">
         <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-8-2.jpg" alt="image description">        
         <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Anand Karaj</div>
@@ -131,7 +131,7 @@
 
     <div id="reception"  class="rounded-lg bg-periwinkle-50 w-fit sm:px-10 sm:py-10 py-4 px-3 mx-5 grid justify-items-center">
       <figure class="relative w-fit filter">
-        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-13-1.jpg" alt="image description">
+        <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-13-3.jpg" alt="image description">
         <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-13-2.jpg" alt="image description">        
         <figcaption class="parent-container rounded-xl absolute top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-125 backdrop-blur-sm">
           <div class="font-bold md:text-6xl text-4xl pt-10 pb-5">Reception</div>
