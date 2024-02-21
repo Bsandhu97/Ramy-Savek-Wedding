@@ -4,40 +4,40 @@
       <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
     </svg>
   </button>
-  <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+  <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 lg:w-64 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800 bg-periwinkle-50">
         <router-link to="/" class="flex items-center ps-2.5 mb-5">
-          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-7" alt="rings-icon" />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
+          <img src="../assets/rings (1).png" class="h-7 me-3 lg:h-10" alt="rings-icon" />
+          <span class="self-center lg:text-3xl text-lg font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
         </router-link>
-        <ul class="space-y-2 font-medium">
+        <ul class="space-y-2 font-medium lg:text-xl text-md">
           <li>
               <a @click="scrollToSection('mehendi')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <img src="../assets/henna (1).png" class="h-6 me-3 sm:h-7" alt="henna-icon" />
+                <img src="../assets/henna (1).png" class="h-7 me-3 lg:h-10" alt="henna-icon" />
                 <span class="flex-1 ms-3 whitespace-nowrap">Mehendi</span>
               </a>
           </li>
           <li>
               <a @click="scrollToSection('jaggo')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <img src="../assets/punjabi.png" class="h-6 me-3 sm:h-7" alt="tol-icon" />
+                <img src="../assets/punjabi.png" class="h-7 me-3 lg:h-10" alt="tol-icon" />
                 <span class="flex-1 ms-3 whitespace-nowrap">Jaggo</span>
               </a>
           </li>
           <li>
               <a @click="scrollToSection('maiyan')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <img src="../assets/ladoo.png" class="h-6 me-3 sm:h-7" alt="laddo-icon" />
+                <img src="../assets/ladoo.png" class="h-7 me-3 lg:h-10" alt="laddo-icon" />
                 <span class="flex-1 ms-3 whitespace-nowrap">Maiyan</span>
               </a>
           </li>
           <li>
               <a @click="scrollToSection('anandkaraj')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <img src="../assets/religion.png" class="h-6 me-3 sm:h-7" alt="kanda-icon" />
+                <img src="../assets/religion.png" class="h-7 me-3 lg:h-10" alt="kanda-icon" />
                 <span class="flex-1 ms-3 whitespace-nowrap">Anand Karaj</span>
               </a>
           </li>
           <li>
               <a @click="scrollToSection('reception')" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <img src="../assets/cheers.png" class="h-6 me-3 sm:h-7" alt="champagne-icon" />
+                <img src="../assets/cheers.png" class="h-7 me-3 lg:h-10" alt="champagne-icon" />
                 <span class="flex-1 ms-3 whitespace-nowrap">Reception</span>
               </a>
           </li>
@@ -48,11 +48,7 @@
     <!-- Switch to 2/3 in mobile -->
     <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit filter">
-<<<<<<< HEAD
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-1.jpg" alt="image description">
-=======
           <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-6.jpg" alt="image description">
->>>>>>> bd1db7219fde33abdc86a0e5b1a033f42a83dc26
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">
 
         <figcaption class="absolute rounded-xl parent-container top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-150 backdrop-blur-sm">
