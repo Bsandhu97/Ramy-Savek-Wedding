@@ -48,7 +48,7 @@
     <!-- Switch to 2/3 in mobile -->
     <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit filter">
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-6.jpg" alt="image description">
+          <img class="rounded-xl sm:block hidden" src="../assets/ramy-Savek-6-6.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">
 
         <figcaption class="absolute rounded-xl parent-container top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-150 backdrop-blur-sm">
