@@ -4,11 +4,11 @@
       <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
     </svg>
   </button>
-  <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+  <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 md:w-80 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800 bg-periwinkle-50">
         <router-link to="/" class="flex items-center ps-2.5 mb-5">
-          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-7" alt="rings-icon" />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
+          <img src="../assets/rings (1).png" class="h-6 me-3 sm:h-12" alt="rings-icon" />
+          <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
         </router-link>
         <ul class="space-y-2 font-medium">
           <li>
@@ -48,11 +48,7 @@
     <!-- Switch to 2/3 in mobile -->
     <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit filter">
-<<<<<<< HEAD
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-1.jpg" alt="image description">
-=======
-          <img class="rounded-xl sm:block hidden" src="../assets/Ramy-Savek-6-6.jpg" alt="image description">
->>>>>>> bd1db7219fde33abdc86a0e5b1a033f42a83dc26
+          <img class="rounded-xl sm:block hidden" src="../assets/ramy-Savek-6-6.jpg" alt="image description">
           <img class="rounded-xl sm:hidden block" src="../assets/Ramy-Savek-1.jpg" alt="image description">
 
         <figcaption class="absolute rounded-xl parent-container top-0 left-0 right-0 bottom-0 px-4 text-lg text-white flex flex-col justify-center backdrop-contrast-150 backdrop-blur-sm">
