@@ -1,11 +1,15 @@
 <template>
-  <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="grid px-6 py-3 pt-5  ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<div id="app">
+  <div class="background-container">
+    <div v-for="circle in circles" :key="circle.id" class="circle" :style="circle.style"></div>
+  </div>
+  <button id="sidebar-button" @click="toggleSideBar()" type="button" class="grid px-6 py-3 pt-5  ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <svg id="sidebar-button" class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
     </svg>
   </button>
-  <aside id="default-sidebar"  class="fixed top-0 left-0 z-40 lg:w-64 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800 bg-periwinkle-50">
+  <aside id="default-sidebar" class="fixed top-0 left-0 z-40 lg:w-64 w-56 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <div id="sidebar" class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800 bg-periwinkle-50">
         <router-link to="/" class="flex items-center ps-2.5 mb-5">
           <img src="../assets/rings (1).png" class="h-7 me-3 lg:h-10" alt="rings-icon" />
           <span class="self-center lg:text-3xl text-lg font-semibold whitespace-nowrap dark:text-white">Rameet <br>&<br> Gursavek</span>
@@ -149,13 +153,37 @@
       </figcaption>
     </figure>   
   </div>
+  <div class="background" :style="{ background: gradientStyle }"></div>
+</div>
 </div>
 </template>
 
 <script>
 
 export default {
-   methods: {
+  
+  data() {
+    return {
+      periwinkle: [
+        '#eeefff',
+        '#dfe1ff',
+        '#ccccff',
+        '#a5a3fe',
+        '#8d7ffa',
+        '#7a60f4',
+        '#6d43e8',
+        '#5f35cd',
+        '#4d2ea5',
+        '#412c83',
+        '#271a4c'
+      ],
+      gradientStyle: 'linear-gradient(to right, #6d43e8, #8d7ffa)',
+      index: 0,
+      circles: [],
+      opened: false,
+    };
+  },
+  methods: {
     toGoogleMaps(value){
       if(value == 1){
           window.open('https://maps.app.goo.gl/sDdqDpawNEuqsbzx6', '_blank');
@@ -167,10 +195,7 @@ export default {
         window.open('https://maps.app.goo.gl/ET7avNXAzW713PKo6', '_blank'); 
       }
     },
-    toggleSideBar() {
-      const sidebar = document.getElementById('default-sidebar');
-      sidebar?.classList.toggle('-translate-x-full');
-    },
+
     scrollToSection(section) {
       const element = document.getElementById(section);
       if (element) {
@@ -192,16 +217,105 @@ export default {
         else if(element?.classList.contains('text-periwinkle-50')){
           element?.classList.add('text-periwinkle-300');
         }
-   
-        
     },
+    createCircles() {
+      const numCircles = 25;
+
+      for (let i = 0; i < numCircles; i++) {
+        this.circles.push(this.createCircle());
+      }
+    },
+    createCircle() {
+      const randomSize = Math.floor(Math.random() * 30) + 10;
+      const randomPositionX = Math.random() * window.innerWidth;
+      const randomPositionY = Math.random() * window.innerHeight;
+      const randomSpeedX = (Math.random() - 0.5) * 2; 
+      const randomSpeedY = (Math.random() - 0.5) * 2;
+
+      return {
+        id: Date.now() + Math.random(),
+        style: {
+          width: `${randomSize}px`,
+          height: `${randomSize}px`,
+          left: `${randomPositionX}px`,
+          top: `${randomPositionY}px`,
+        },
+        speed: {
+          x: randomSpeedX,
+          y: randomSpeedY,
+        },
+      };
+    },
+    animateCircles() {
+      setInterval(() => {
+        this.circles.forEach((circle) => {
+          circle.style.left = `${parseFloat(circle.style.left) + circle.speed.x}px`;
+          circle.style.top = `${parseFloat(circle.style.top) + circle.speed.y}px`;
+          if (
+            parseFloat(circle.style.left) < 0 ||
+            parseFloat(circle.style.left) > window.innerWidth ||
+            parseFloat(circle.style.top) < 0 ||
+            parseFloat(circle.style.top) > window.innerHeight
+          ) {
+            circle.style.left = `${Math.random() * window.innerWidth}px`;
+            circle.style.top = `${Math.random() * window.innerHeight}px`;
+          }
+        });
+      }, 30);
+    },
+    mediaWindowSizeClick() {
+       //for the resizing when the sidebar clipps in the cards. change fonts, and card fonts
+    },
+    toggleSideBar() {
+      const sidebar = document.getElementById('default-sidebar');
+      if(sidebar?.classList.contains('-translate-x-full')) {
+        sidebar?.classList.remove('-translate-x-full');
+        sidebar?.classList.add('translate-x-0');
+        this.opened = true;
+      }
+    },
+    detectFocus() {
+      const sidebar = document.getElementById('default-sidebar');
+      document.addEventListener('click', function(event) {
+        if(event.target.id !== 'sidebar' && event.target.id !== "sidebar-button"){
+          console.log('clicked outside');
+          sidebar?.classList.add('-translate-x-full');
+          sidebar?.classList.remove('translate-x-0');
+        }
+      });
+    },
+  },
+  mounted() {
+    this.createCircles();
+    this.animateCircles();
+    this.detectFocus();
   },
 }
 </script>
 
 <style>
 .parent-container {
-  background-color: rgba(0, 0, 0, 0.3); /* Parent opacity */
-  /* Additional styling for the parent container */
+  background-color: rgba(0, 0, 0, 0.3);
 }
+
+#app {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+  background-color: #eeefff;
+  border-radius: 50%;
+}
+
 </style>
