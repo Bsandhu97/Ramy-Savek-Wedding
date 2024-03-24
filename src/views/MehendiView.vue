@@ -50,6 +50,7 @@
   </aside>
   <div class="about grid justify-items-center sm:gap-20 gap-10 sm:ps-56 ps-0">
     <!-- Switch to 2/3 in mobile -->
+    <CountdownCard/>
     <div id="mehendi" class="rounded-xl bg-periwinkle-50 sm:px-10 sm:py-10 py-4 px-3 mx-5 sm:mt-10 mt-3 grid justify-items-center sm:w-fit w-5/6">
       <figure class="relative w-fit filter">
           <img class="rounded-xl sm:block hidden" src="../assets/ramy-Savek-6-6.jpg" alt="image description">
@@ -159,7 +160,7 @@
 </template>
 
 <script>
-
+import CountdownCard from '../components/CountdownCard.vue'
 export default {
   
   data() {
@@ -182,6 +183,9 @@ export default {
       circles: [],
       opened: false,
     };
+  },
+  components: {
+    CountdownCard
   },
   methods: {
     toGoogleMaps(value){

@@ -1,12 +1,14 @@
 <template>
 <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/events">Events</router-link>
+    <router-link to="/events">Events</router-link> | 
+    <router-link to="/EventDetailsView">Event Details</router-link>
+
   </nav>
   <div class="home">
-    <!-- <p class="font-bold sm:text-6xl text-4xl">Rameet Sandhu & Gursavek Gill</p>
+    <p class="font-bold sm:text-6xl text-4xl">Rameet Sandhu & Gursavek Gill</p>
     <p class="text-semibold sm:text-4xl text-2xl">April 30th - May 4th </p>
-    <CountdownCard /> -->
+    <CountdownCard/>
      <button @click="authorizeGooglePhotos">Authorize Google Photos</button>
      
      <div>
@@ -20,7 +22,7 @@
 
 <script>
 // @ is an alias to /src
-// import CountdownCard from '../components/CountdownCard.vue'
+import CountdownCard from '../components/CountdownCard.vue'
 // import axios from 'axios'
 // import { OAuth2Client } from 'google-auth-library';
 
@@ -32,7 +34,7 @@ export default {
     }
   },
   components: {
-    // CountdownCard
+    CountdownCard
   },
   methods: {
     authorizeGooglePhotos() {
